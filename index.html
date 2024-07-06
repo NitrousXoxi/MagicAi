@@ -2,37 +2,39 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="UfY-yk5epNFjYgdMlUdVb4-dLQsmstTea6DxzoKdwK0" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Platform AI Text seperti ChatGPT untuk berinteraksi dengan AI yang canggih. Temukan solusi AI untuk kebutuhan Anda.">
+  <meta name="keywords"
+    content="AI text, ChatGPT, artificial intelligence, generative AI, natural language processing, Free AI, AI gratis, gratis, free, Chat AI Gratis, ChatGPT Free, ChatGPT Gratis">
+  <meta name="author" content="Bima Jovanta">
   <title>MagicAI</title>
   <link rel="shortcut icon" href="public/gemini.svg" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <main>
       <h1>MagicAi</h1>
-      <form>
-        <!-- <div class="image-picker">
-        <label class="image-choice">
-          <input type="radio" checked name="chosen-image" value="/baked_goods_1.jpg">
-          <img src="/baked_goods_1.jpg">
-        </label>
-        <label class="image-choice">
-          <input type="radio" name="chosen-image" value="/baked_goods_2.jpg">
-          <img src="/baked_goods_2.jpg">
-        </label>
-        <label class="image-choice">
-          <input type="radio" name="chosen-image" value="/baked_goods_3.jpg">
-          <img src="/baked_goods_3.jpg">
-        </label>
-      </div> -->
+      <form class="prompt-form">
         <div class="prompt-box">
           <label>
             <input name="prompt" placeholder="Masukan Perintah Disini..." type="text" id="prompt">
           </label>
           <button type="submit">Kirim</button>
+        </div>
+        <div class="prompt-box">
+          <!-- <input type="file" id="image-upload" accept="image/*"> -->
+
+          <input type="file" id="image-upload" accept="image/*" hidden>
+          <label for="image-upload" class="file-upload-label">Pilih Gambar</label>
+          <span id="file-upload-filename" class="file-upload-filename">Tidak ada file yang dipilih</span>
         </div>
       </form>
       <p class="output">(Hasilnya Akan Muncul Disini...)</p>
@@ -41,4 +43,5 @@
     <script type="module" src="/main.js"></script>
   </div>
 </body>
+
 </html>
